@@ -44,7 +44,7 @@ const Navbar = () => {
           {/* Logo only on desktop */}
           <a
             href="#"
-            className="text-cyan-400 text-xl font-semibold hover:text-cyan-300 transition-colors hidden md:block"
+            className="text-cyan-400 text-xl font-semibold hover:text-cyan-300  transition-colors hidden md:block bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent"
           >
             Surya P
           </a>
