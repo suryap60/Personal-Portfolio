@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Surya P - Portfolio Website
+
+A modern, responsive portfolio website built with Next.js 16, React 19, TypeScript, and Tailwind CSS 4.
+
+## Features
+
+- **Modern Design**: Dark theme with gradient accents and smooth animations
+- **Fully Responsive**: Optimized for all device sizes
+- **Performance Optimized**: Built with Next.js for fast loading and SEO
+- **Sections Include**:
+  - Hero section with introduction
+  - About section with skills highlights
+  - Professional experience timeline
+  - Featured projects showcase
+  - Technical skills with progress bars
+  - Education and certifications
+  - Contact form with social links
+
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **UI Library**: React 19
+- **Styling**: Tailwind CSS 4
+- **Language**: TypeScript
+- **Icons**: React Icons
+- **Animations**: GSAP
 
 ## Getting Started
 
-First, run the development server:
-
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+```
+src/
+├── app/
+│   ├── layout.tsx       # Root layout with metadata
+│   ├── page.tsx         # Home page with all sections
+│   └── globals.css      # Global styles and theme
+├── components/
+│   ├── layout/
+│   │   ├── Navbar.tsx   # Navigation bar
+│   │   └── Footer.tsx   # Footer component
+│   └── sections/
+│       ├── HeroSection.tsx
+│       ├── AboutSection.tsx
+│       ├── ExperienceSection.tsx
+│       ├── ProjectsSection.tsx
+│       ├── SkillsSection.tsx
+│       ├── EducationSection.tsx
+│       └── ContactSection.tsx
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Customization
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Update the content in each section component to match your personal information:
+- Contact details in `ContactSection.tsx`
+- Projects in `ProjectsSection.tsx`
+- Experience in `ExperienceSection.tsx`
+- Skills in `SkillsSection.tsx`
+- Education in `EducationSection.tsx`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Build for Production
 
-## Deploy on Vercel
+```bash
+npm run build
+npm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deploy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deploy easily on Vercel, Netlify, or any platform that supports Next.js.
+
+## License
+
+MIT License - feel free to use this template for your own portfolio!
